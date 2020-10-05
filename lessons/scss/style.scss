@@ -16,7 +16,10 @@ img{vertical-align:top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 /********************************************************************/
 body{
-    font-family: "Arial";
+    font-family: "ArialMT";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 }
 .image_container{
     height: auto;
@@ -34,7 +37,6 @@ body{
     justify-content: space-between;
     align-items: center;
     &_h1{
-        font-family: ArialMT;
         font-size: 60px;
         color: #ffffff;
     }
@@ -42,7 +44,6 @@ body{
         margin-top: 40px;
     }
     &_list>li{
-        font-family: ArialMT;
         font-size: 20px;
         line-height: 36px;
         color: #ffffff;
@@ -50,7 +51,7 @@ body{
     &_list>li::before{
         content: '';
         display: inline-block;
-        background-image: url(images/check_icon.png);
+        background-image: url(./img/check_icon.png);
         width: 25px;
         height: 19px;
         margin-right: 10px;
