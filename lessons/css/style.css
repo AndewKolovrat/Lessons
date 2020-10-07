@@ -7,7 +7,6 @@
 }
 
 *, *:before, *:after {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -94,15 +93,9 @@ body {
 .header {
   background-color: #445162;
   height: 320px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header_h1 {
@@ -123,7 +116,7 @@ body {
 .header_list > li::before {
   content: '';
   display: inline-block;
-  background-image: url(./img/check_icon.png);
+  background-image: url(../img/check_icon.png);
   width: 25px;
   height: 19px;
   margin-right: 10px;
@@ -142,15 +135,9 @@ body {
 
 /********************************************************************/
 .aboute {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 50px;
 }
 
@@ -178,4 +165,3 @@ body {
 }
 
 /********************************************************************/
-/*# sourceMappingURL=style.css.map */
