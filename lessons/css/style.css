@@ -72,16 +72,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /********************************************************************/
+@font-face {
+  font-family: 'ArialMT';
+  src: url(../fonts/ARIALMT.ttf);
+}
+
 body {
-  font-family: "ArialMT";
+  font-family: 'ArialMT';
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-}
-
-.image_container {
-  height: auto;
-  width: 100%;
 }
 
 .container {
@@ -92,28 +92,28 @@ body {
 
 .header {
   background-color: #445162;
-  height: 320px;
+  padding: 50px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .header_h1 {
   font-size: 60px;
   color: #ffffff;
+  margin-bottom: 50px;
 }
 
-.header_list {
-  margin-top: 40px;
-}
-
-.header_list > li {
+.header_list_item {
   font-size: 20px;
-  line-height: 36px;
   color: #ffffff;
+  margin-bottom: 15px;
 }
 
-.header_list > li::before {
+.header_list_item:last-child {
+  margin-bottom: 0;
+}
+
+.header_list_item::before {
   content: '';
   display: inline-block;
   background-image: url(../img/check_icon.png);
@@ -128,40 +128,68 @@ body {
   background-color: #ffffff;
 }
 
-.header_right > div > img {
+.header_img {
   max-width: 470px;
   height: auto;
 }
 
 /********************************************************************/
-.aboute {
+.about {
+  padding: 50px 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 50px;
 }
 
-.aboute_h2 {
+.about_h2 {
   font-size: 30px;
   line-height: 36px;
   color: #445161;
-  margin-top: 50px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
-.aboute_text {
-  margin-top: 20px;
+.about_text {
   font-size: 16px;
   line-height: 24px;
   color: #333333;
   max-width: 655px;
+  margin-bottom: 20px;
 }
 
-.aboute_right {
-  margin-top: 50px;
-  width: 430px;
-  height: 245px;
+.about_clip {
   background-color: #445161;
 }
 
 /********************************************************************/
+.dignity_product {
+  padding: 50px 50px;
+  background-color: #f5f5f5;
+}
+
+.dignity_product_h2 {
+  font-size: 30px;
+  line-height: 36px;
+  color: #445161;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.dignity_product_list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
+
+.dignity_product_list_item {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.dignity_product_list_item::before {
+  content: '';
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  background-image: url(../img/plus.jpg);
+  margin-right: 10px;
+}
