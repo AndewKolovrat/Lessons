@@ -97,7 +97,7 @@ body {
   justify-content: space-between;
 }
 
-.header_h1 {
+.header_title {
   font-size: 60px;
   color: #ffffff;
   margin-bottom: 50px;
@@ -122,15 +122,8 @@ body {
   margin-right: 10px;
 }
 
-.header_right {
-  width: 470px;
-  height: 215px;
-  background-color: #ffffff;
-}
-
 .header_img {
   max-width: 470px;
-  height: auto;
 }
 
 /********************************************************************/
@@ -140,7 +133,7 @@ body {
   justify-content: space-between;
 }
 
-.about_header {
+.about_title {
   font-size: 30px;
   line-height: 36px;
   color: #445161;
@@ -156,6 +149,7 @@ body {
 }
 
 .about_clip {
+  max-width: 430px;
   background-color: #445161;
 }
 
@@ -165,7 +159,7 @@ body {
   background-color: #f5f5f5;
 }
 
-.dignity_product_h2 {
+.dignity_product_title {
   font-size: 30px;
   line-height: 36px;
   color: #445161;
@@ -204,7 +198,7 @@ body {
   background-color: #ffffff;
 }
 
-.screenshots_header {
+.screenshots_title {
   font-size: 30px;
   line-height: 36px;
   color: #445161;
@@ -235,7 +229,7 @@ body {
   max-width: 360px;
 }
 
-.screenshots_list_item_header {
+.screenshots_list_item_title {
   font-size: 24px;
   line-height: 30px;
   color: #445161;
@@ -247,7 +241,7 @@ body {
   background-color: #f5f5f5;
 }
 
-.reviews_header {
+.reviews_title {
   font-size: 30px;
   line-height: 36px;
   color: #445161;
