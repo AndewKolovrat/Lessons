@@ -259,6 +259,15 @@ body {
 .reviews_list_item {
   max-width: 50%;
   display: flex;
+  margin-bottom: 25px;
+}
+
+.reviews_list_item_avatar {
+  width: 75px;
+  height: 75px;
+  background-color: #445161;
+  border-radius: 48%;
+  margin-right: 15px;
 }
 
 .reviews_list_item_quote {
@@ -266,4 +275,17 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 485px;
+  font-size: 14px;
+  line-height: 18px;
+  font-style: italic;
+  color: #333333;
+  padding: 15px 20px 15px 25px;
+}
+
+.reviews_list_item_quote_text {
+  margin-bottom: 15px;
+}
+
+.reviews_list_item_quote_autor {
+  color: #989898;
 }

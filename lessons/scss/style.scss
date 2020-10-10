@@ -174,11 +174,30 @@ body{
         &_item{
             max-width: 50%;
             display: flex;
+            margin-bottom: 25px;
+            &_avatar{
+                width: 75px;
+                height: 75px;
+                background-color: #445161;
+                border-radius: 48%;
+                margin-right: 15px;
+            }
             &_quote{
                 background-image: url(../img/bg_quote.png);
                 background-repeat: no-repeat;
                 background-size: cover;
                 max-width: 485px;
+                font-size: 14px;
+                line-height: 18px;
+                font-style: italic;
+                color: #333333;
+                padding: 15px 20px 15px 25px;
+                &_text{
+                    margin-bottom: 15px;
+                }
+                &_autor{
+                    color: #989898;
+                }
             }
         }
     }
