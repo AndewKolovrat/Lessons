@@ -4,7 +4,7 @@
         {
             "format": "expanded",
             "extensionName": ".css",
-            "savePath": "/lessons/css"
+            "savePath": "/css"
         }
     ],
     "liveSassCompile.settings.generateMap": false

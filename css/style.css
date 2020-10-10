@@ -257,7 +257,7 @@ body {
 }
 
 .reviews_list_item {
-  max-width: 50%;
+  max-width: 48%;
   display: flex;
   margin-bottom: 25px;
 }
