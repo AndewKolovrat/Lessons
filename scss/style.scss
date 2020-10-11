@@ -2,6 +2,7 @@
 *{padding:0;margin:0;border:0;}
 *,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
 :focus,:active{outline:none;}
+a{color: #fff;}
 a:focus,a:active{outline:none;}
 nav,footer,header,aside{display:block;}
 html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
@@ -17,7 +18,16 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 /********************************************************************/
  @font-face {
     font-family: 'ArialMT';
-    src: url(../fonts/ARIALMT.ttf);
+    src: url(../fonts/ARIALMT.ttf) format("truetype");
+}
+@font-face {
+	font-family:"Socialico";
+	src:url("../fonts/Socialico.eot?") format("eot"),
+	url("../fonts/Socialico.woff") format("woff"),
+	url("../fonts/Socialico.ttf") format("truetype"),
+	url("../fonts/Socialico.svg#Socialico") format("svg");
+	font-weight:normal;
+	font-style:normal;
 }
 body{
     font-family: 'ArialMT', 'Arial', 'sans-serif';
@@ -337,6 +347,17 @@ body{
                 &_img{
                     margin-right: 5px;
                 }
+            }
+        }
+        &_social{
+            font-family: Socialico;
+            color: #ffffff;
+            font-size: 60px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            &_list{
+                display: flex;
             }
         }
     }
