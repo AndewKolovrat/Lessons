@@ -39,6 +39,15 @@ body{
     margin: 0 auto;
     padding: 0 50px;
 }
+.input{
+    font-size: 16px;
+    line-height: 24px;
+    color: #445162;
+    opacity: .8;
+}
+.input:active,.input:hover{
+    opacity: 1;
+}
 .btn{
     background-color: #ffffff;
     border-radius: 2px;
@@ -49,11 +58,6 @@ body{
     font-weight: 700;
     color: #445161;
 }
-.input{
-    font-size: 16px;
-    line-height: 24px;
-    color: #445162;
-}
 .btn:hover {
     background-color: #445161;
     color: #fff;
@@ -62,7 +66,13 @@ body{
 .btn:active {
     background-color: #fff;
     color: #445161;
-  }
+}
+a{
+    opacity: .9;
+}
+a:active, a:hover{
+    opacity: 1;
+}
 /********************************************************************/
 .header{
     background-color: #445162;
@@ -346,6 +356,9 @@ body{
                 &_img{
                     margin-right: 5px;
                 }
+                &_link{
+                    color: #ffffff;
+                }
             }
         }
         &_social{
@@ -357,6 +370,11 @@ body{
             text-align: left;
             &_list{
                 display: flex;
+                &_item{
+                    &_link{
+                        color: #fff;
+                    }
+                }
             }
         }
     }

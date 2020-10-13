@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  font-family: 'ArialMT' 'Arial';
+  font-family: 'ArialMT', 'Arial', 'sans-serif';
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -95,6 +95,17 @@ body {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 50px;
+}
+
+.input {
+  font-size: 16px;
+  line-height: 24px;
+  color: #445162;
+  opacity: .8;
+}
+
+.input:active, .input:hover {
+  opacity: 1;
 }
 
 .btn {
@@ -108,12 +119,6 @@ body {
   color: #445161;
 }
 
-.input {
-  font-size: 16px;
-  line-height: 24px;
-  color: #445162;
-}
-
 .btn:hover {
   background-color: #445161;
   color: #fff;
@@ -123,6 +128,14 @@ body {
 .btn:active {
   background-color: #fff;
   color: #445161;
+}
+
+a {
+  opacity: .9;
+}
+
+a:active, a:hover {
+  opacity: 1;
 }
 
 /********************************************************************/
@@ -461,6 +474,10 @@ body {
   margin-right: 5px;
 }
 
+.footer_contacts_list_item_link {
+  color: #ffffff;
+}
+
 .footer_contacts_social {
   font-family: Socialico;
   color: #ffffff;
@@ -472,6 +489,10 @@ body {
 
 .footer_contacts_social_list {
   display: flex;
+}
+
+.footer_contacts_social_list_item_link {
+  color: #fff;
 }
 
 .footer_copy {
