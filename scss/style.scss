@@ -28,27 +28,27 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 	font-weight:normal;
 	font-style:normal;
 }
-body{
+body {
     font-family: 'ArialMT', 'Arial', 'sans-serif';
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
 }
-.container{
+.container {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 50px;
 }
-.input{
+.input {
     font-size: 16px;
     line-height: 24px;
     color: #445162;
     opacity: .8;
 }
-.input:active,.input:hover{
+.input:active, .input:hover, .input:focus {
     opacity: 1;
 }
-.btn{
+.btn {
     background-color: #ffffff;
     border-radius: 2px;
     border: 1px solid transparent;
@@ -58,7 +58,7 @@ body{
     font-weight: 700;
     color: #445161;
 }
-.btn:hover {
+.btn:hover, .btn:focus {
     background-color: #445161;
     color: #fff;
     border: 1px solid #fff;
@@ -67,33 +67,27 @@ body{
     background-color: #fff;
     color: #445161;
 }
-a{
-    opacity: .9;
-}
-a:active, a:hover{
-    opacity: 1;
-}
 /********************************************************************/
-.header{
+.header {
     background-color: #445162;
     padding: 50px;
     display: flex;
     justify-content: space-between;
-    &_title{
+    &_title {
         font-size: 60px;
         line-height: 1.2;
         color: #ffffff;
         margin-bottom: 50px;
     }
-    &_list_item{
+    &_list_item {
         font-size: 20px;
         color: #ffffff;
         margin-bottom: 15px;
     }
-    &_list_item:last-child{
+    &_list_item:last-child {
         margin-bottom: 0;
     }
-    &_list_item::before{
+    &_list_item::before {
         content: '';
         display: inline-block;
         background-image: url(../img/check_icon.png);
@@ -101,50 +95,50 @@ a:active, a:hover{
         height: 19px;
         margin-right: 10px;
     }
-    &_img{
+    &_img {
         max-width: 470px;
     }  
 }
 /********************************************************************/
-.about{
+.about {
     padding: 50px 0;
     display: flex;
     justify-content: space-between;
-    &_title{
+    &_title {
         font-size: 30px;
         line-height: 36px;
         color: #445161;
         margin-bottom: 30px;
     }
-    &_text{
+    &_text {
         font-size: 16px;
         line-height: 24px;
         color: #333333;
         max-width: 655px;
         margin-bottom: 20px;
     }
-    &_clip{
+    &_clip {
         max-width: 430px;
         background-color: #445161;
     }
 }
 /********************************************************************/
-.dignity_product{
+.dignity_product {
     padding: 50px 50px;
     background-color: #f5f5f5;
-    &_title{
+    &_title {
         font-size: 30px;
         line-height: 36px;
         color: #445161;
         text-align: center;
         margin-bottom: 30px;
     }
-    &_list{
+    &_list {
         display: flex;
         width: 100%;
         flex-wrap: wrap;
         justify-content: space-between;
-        &_item{
+        &_item {
             display: flex;
             max-width: 50%;
             margin: 0 0 35px 0;
@@ -152,7 +146,7 @@ a:active, a:hover{
             line-height: 24px;
             color: #333333;
         }
-        &_item::before{
+        &_item::before {
             content: '';
             padding: 16px;
             margin: 5px 10px 0 0;
@@ -163,35 +157,35 @@ a:active, a:hover{
     }
 }
 /********************************************************************/
-.screenshots{
+.screenshots {
     padding: 50px 50px;
     background-color: #ffffff;
-    &_title{
+    &_title {
         font-size: 30px;
         line-height: 36px;
         color: #445161;
         text-align: center;
         margin-bottom: 35px;
     }
-    &_list{
+    &_list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         width: 100%;
-        &_item{
+        &_item {
             display: flex;
             width: 49%;
             //flex-wrap: wrap;
             margin-bottom: 30px;
-            &_img{
+            &_img {
                 max-width: 200px;
                 margin-right: 15px;
                 background-color: #445161;
             }
-            &_text{
+            &_text {
                 max-width: 360px;
             }
-            &_title{
+            &_title {
                 font-size: 24px;
                 line-height: 30px;
                 color: #445161;
@@ -200,33 +194,33 @@ a:active, a:hover{
     }
 }
 /********************************************************************/
-.reviews{
+.reviews {
     padding: 50px 50px;
     background-color: #f5f5f5;
-    &_title{
+    &_title {
         font-size: 30px;
         line-height: 36px;
         color: #445161;
         text-align: center;
         margin-bottom: 35px;
     }
-    &_list{
+    &_list {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
         justify-content: space-between;
-        &_item{
+        &_item {
             max-width: 48%;
             display: flex;
             margin-bottom: 25px;
-            &_avatar{
+            &_avatar {
                 width: 75px;
                 height: 75px;
                 background-color: #445161;
                 border-radius: 48%;
                 margin-right: 15px;
             }
-            &_quote{
+            &_quote {
                 background-image: url(../img/bg_quote.png);
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -236,10 +230,10 @@ a:active, a:hover{
                 font-style: italic;
                 color: #333333;
                 padding: 15px 20px 15px 25px;
-                &_text{
+                &_text {
                     margin-bottom: 15px;
                 }
-                &_autor{
+                &_autor {
                     color: #989898;
                 }
             }
@@ -247,9 +241,9 @@ a:active, a:hover{
     }
 }
 /********************************************************************/
-.price{
+.price {
     padding: 50px 50px;
-    &_title{
+    &_title {
         font-size: 30px;
         line-height: 36px;
         font-weight: 400;
@@ -257,17 +251,17 @@ a:active, a:hover{
         text-align: center;
         margin-bottom: 30px;
     }
-    &_list{
+    &_list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: flex-end;
-        &_item{
+        &_item {
             background-color: #445162;
             max-width: 300px;
             padding: 16px 0 20px 0;
             border: 2px  solid #445161;
-            &_title{
+            &_title {
                 font-size: 24px;
                 line-height: 30px;
                 color: #ffffff;
@@ -275,7 +269,7 @@ a:active, a:hover{
                 text-transform: capitalize;
                 margin-bottom: 20px;
             }
-            &_txt{
+            &_txt { 
                 display: block;
                 width: 100%;
                 height: 70px;
@@ -288,17 +282,17 @@ a:active, a:hover{
                 color: #445162;
                 margin-bottom: 20px;
             }
-            &_price_list{
+            &_price_list {
                 font-size: 14px;
                 line-height: 24px;
                 color: #ffffff;
                 padding: 20px;
-                &_item{
+                &_item {
                     list-style: decimal;
                     margin-left: 20px;
                 }
             }
-            &_btn{
+            &_btn {
                 margin: 0 20px;
                 width: 260px;
                 height: 40px;
@@ -307,78 +301,86 @@ a:active, a:hover{
     }
 }
 /********************************************************************/
-.footer{
+.footer {
     background-color: #445162;
     padding: 50px 0 0;
-    &_title{
+    &_title {
         text-align: center;
         font-size: 30px;
         line-height: 36px;
         color: #ffffff;
         margin-bottom: 30px;
     }
-    &_wrap{
+    &_wrap {
         padding: 0 50px;
         display: flex;
         // justify-content: space-around;
     }
-    &_form{
+    &_form {
         padding: 0 50px 50px;
         display: flex;
         flex-direction: column;
-        &_name{
+        &_name {
             width: 500px;
             height: 40px;
             margin-bottom: 20px;
         }
-        &_email{
+        &_email {
             width: 500px;
             height: 40px;
             margin-bottom: 20px;
         }
-        &_msg{
+        &_msg {
             width: 500px;
             height: 170px;
             margin-bottom: 20px;
         }
-        &_btn{
+        &_btn {
             width: 140px;
             height: 40px;
             align-self: center;
         }
     }
-    &_contacts{
+    &_contacts {
         color: #ffffff;
-        &_list{
+        &_list {
             margin-bottom: 40px;
-            &_item{
+            &_item {
                 margin-bottom: 30px;
-                &_img{
+                &_img {
                     margin-right: 5px;
                 }
-                &_link{
+                &_link {
                     color: #ffffff;
+                    opacity: .9;
+                }
+                &_link:active, &_link:hover {
+                    opacity: 1;
                 }
             }
         }
-        &_social{
+        &_social {
             font-family: Socialico;
             color: #ffffff;
             font-size: 60px;
             font-weight: 400;
             line-height: 24px;
             text-align: left;
-            &_list{
+            &_list {
                 display: flex;
-                &_item{
-                    &_link{
+                &_item {
+                    &_link {
                         color: #fff;
+                        opacity: .9;
+                    }
+                    &_link:active, &_link:hover {
+                        opacity: 1;
                     }
                 }
             }
         }
     }
-    &_copy{
+    &_copy {
         font-size: 12px;
         line-height: 24px;
         letter-spacing: 0.025em;
