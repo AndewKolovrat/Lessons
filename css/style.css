@@ -14,10 +14,6 @@
   outline: none;
 }
 
-a {
-  color: #fff;
-}
-
 a:focus, a:active {
   outline: none;
 }
@@ -89,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  font-family: 'ArialMT', 'Arial', 'sans-serif';
+  font-family: 'ArialMT' 'Arial';
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
