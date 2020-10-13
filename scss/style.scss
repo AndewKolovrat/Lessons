@@ -65,6 +65,7 @@ body {
   }
 .btn:active {
     background-color: #fff;
+    border: 1px solid red;
     color: #445161;
 }
 /********************************************************************/
@@ -314,7 +315,7 @@ body {
     &_wrap {
         padding: 0 50px;
         display: flex;
-        // justify-content: space-around;
+        justify-content: center;
     }
     &_form {
         padding: 0 50px 50px;
@@ -364,7 +365,7 @@ body {
             color: #ffffff;
             font-size: 60px;
             font-weight: 400;
-            line-height: 24px;
+            line-height: 42px;
             text-align: left;
             &_list {
                 display: flex;
