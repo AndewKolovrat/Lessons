@@ -471,7 +471,7 @@ body {
 
 .footer_contacts_list_item_link {
   color: #ffffff;
-  opacity: .9;
+  opacity: .8;
 }
 
 .footer_contacts_list_item_link:active, .footer_contacts_list_item_link:hover {
@@ -493,7 +493,7 @@ body {
 
 .footer_contacts_social_list_item_link {
   color: #fff;
-  opacity: .9;
+  opacity: .8;
 }
 
 .footer_contacts_social_list_item_link:active, .footer_contacts_social_list_item_link:hover {
