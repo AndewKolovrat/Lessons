@@ -104,7 +104,9 @@ body {
   opacity: .8;
 }
 
-.input:active, .input:hover, .input:focus {
+.input:active,
+.input:hover,
+.input:focus {
   opacity: 1;
 }
 
@@ -119,7 +121,8 @@ body {
   color: #445161;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
   background-color: #445161;
   color: #fff;
   border: 1px solid #fff;
