@@ -1,80 +1,64 @@
 @charset "UTF-8";
 /*Обнуление*/
-* {
-  padding: 0;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
+  padding: 0;
   border: 0;
-}
-
-*, *:before, *:after {
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
   box-sizing: border-box;
 }
 
-:focus, :active {
-  outline: none;
-}
-
-a:focus, a:active {
-  outline: none;
-}
-
-nav, footer, header, aside {
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-html, body {
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
+body {
   line-height: 1;
-  font-size: 14px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
 }
 
-input, button, textarea {
-  font-family: inherit;
-}
-
-input::-ms-clear {
-  display: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-
-a, a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-ul li {
+ol, ul {
   list-style: none;
 }
 
-img {
-  vertical-align: top;
+blockquote, q {
+  quotes: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: inherit;
-  font-weight: inherit;
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /********************************************************************/
 @font-face {
   font-family: 'ArialMT';
-  src: url(../fonts/ARIALMT.ttf) format("truetype");
+  src: url("../fonts/ArialMT.eot");
+  src: url("../fonts/ArialMT.eot?#iefix") format("embedded-opentype"), url("../fonts/ArialMT.woff2") format("woff2"), url("../fonts/ArialMT.woff") format("woff"), url("../fonts/ArialMT.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -85,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  font-family: 'ArialMT' 'Arial';
+  font-family: 'ArialMT', 'Arial', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -95,6 +79,19 @@ body {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 50px;
+}
+
+.input {
+  font-size: 16px;
+  line-height: 24px;
+  color: #445162;
+  opacity: .8;
+}
+
+.input:active,
+.input:hover,
+.input:focus {
+  opacity: 1;
 }
 
 .btn {
@@ -108,13 +105,8 @@ body {
   color: #445161;
 }
 
-.input {
-  font-size: 16px;
-  line-height: 24px;
-  color: #445162;
-}
-
-.btn:hover {
+.btn:hover,
+.btn:focus {
   background-color: #445161;
   color: #fff;
   border: 1px solid #fff;
@@ -122,6 +114,7 @@ body {
 
 .btn:active {
   background-color: #fff;
+  border: 1px solid red;
   color: #445161;
 }
 
@@ -413,6 +406,7 @@ body {
 .footer_wrap {
   padding: 0 50px;
   display: flex;
+  justify-content: center;
 }
 
 .footer_form {
@@ -437,6 +431,7 @@ body {
   width: 500px;
   height: 170px;
   margin-bottom: 20px;
+  resize: none;
 }
 
 .footer_form_btn {
@@ -461,17 +456,35 @@ body {
   margin-right: 5px;
 }
 
+.footer_contacts_list_item_link {
+  color: #ffffff;
+  opacity: .8;
+}
+
+.footer_contacts_list_item_link:active, .footer_contacts_list_item_link:hover {
+  opacity: 1;
+}
+
 .footer_contacts_social {
   font-family: Socialico;
   color: #ffffff;
   font-size: 60px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 42px;
   text-align: left;
 }
 
 .footer_contacts_social_list {
   display: flex;
+}
+
+.footer_contacts_social_list_item_link {
+  color: #fff;
+  opacity: .8;
+}
+
+.footer_contacts_social_list_item_link:active, .footer_contacts_social_list_item_link:hover {
+  opacity: 1;
 }
 
 .footer_copy {

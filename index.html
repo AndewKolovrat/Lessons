@@ -36,7 +36,15 @@
                     aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis
                     dolor.</p>
             </div>
-            <img class='about_clip' src="https://via.placeholder.com/430x245" height="245" alt="about image">
+            <video class='about_clip' width="430" height="245" controls="controls"
+                poster="https://sun9-20.userapi.com/c845020/v845020221/1dd6ec/JWowD1Jb8rA.jpg">
+                <source
+                    src="https://vkvd188.mycdn.me/?expires=1602822873088&srcIp=94.181.152.152&srcAg=CHROME_YA&ms=185.226.53.188&type=3&sig=e2hG-XQ85uQ&ct=0&urls=185.226.52.146&clientType=13&appId=512000384397&id=812183325271" />
+                Элемент video не поддерживается вашим браузером.
+                <a
+                    href="https://vkvd188.mycdn.me/?expires=1602822873088&srcIp=94.181.152.152&srcAg=CHROME_YA&ms=185.226.53.188&type=3&sig=e2hG-XQ85uQ&ct=0&urls=185.226.52.146&clientType=13&appId=512000384397&id=812183325271">Скачайте
+                    видео</a>.
+            </video>
         </section>
 
         <section class="dignity_product container">
@@ -211,10 +219,10 @@
     <footer class="footer container">
         <h2 class="footer_title">Contacts</h2>
         <div class="footer_wrap">
-            <form action="" class="footer_form">
+            <form action="POST" class="footer_form">
                 <input type="text" placeholder="Your name:" class="input footer_form_name">
                 <input type="email" placeholder="Your email:" class="input footer_form_email">
-                <textarea name="" id="" placeholder="Your message:" cols="30" rows="10"
+                <textarea name="message" id="message" placeholder="Your message:" cols="30" rows="10"
                     class="input footer_form_msg"></textarea>
                 <button class="btn footer_form_btn">send</button>
             </form>
@@ -222,48 +230,46 @@
                 <ul class="footer_contacts_list">
                     <li class="footer_contacts_list_item">
                         <img src="img/skype_icon.png" height="26" alt="skype" class="footer_contacts_list_item_img">
-                        here_your_login_skype
+                        <a href="skype:here_your_login_skype" target="_blank"
+                            class="footer_contacts_list_item_link">here_your_login_skype</a>
                     </li>
                     <li class="footer_contacts_list_item">
-
                         <img src="img/icq_icon.png" height="26" alt="icq" class="footer_contacts_list_item_img">
                         279679659
                     </li>
                     <li class="footer_contacts_list_item">
-                        <a href="#">
-                            <img src="img/email_icon.png" height="26" alt="email" class="footer_contacts_list_item_img">
-                        </a>psdhtmlcss@mail.ru</li>
+                        <img src="img/email_icon.png" height="26" alt="email" class="footer_contacts_list_item_img">
+                        <a href="mailto:psdhtmlcss@mail.ru" target="_blank"
+                            class="footer_contacts_list_item_link">psdhtmlcss@mail.ru</a></li>
                     <li class="footer_contacts_list_item">
                         <img src="img/phone_icon.png" height="26" alt="phone" class="footer_contacts_list_item_img">
-                        80 00 4568 55 55</li>
+                        <a href="tel:800045685555" target="_blank" class="footer_contacts_list_item_link">80 00 4568 55
+                            55</a></li>
                 </ul>
                 <div class="footer_contacts_social">
-                    <!-- <a href="#" class="footer_contacts_social_link">
-                        <img src="img/socials.png" alt="social" height="42" class="footer_contacts_social_link_img">
-                    </a> -->
                     <ul class="footer_contacts_social_list">
                         <li class="footer_contacts_social_list_item">
-                            <a href="#" class="footer_contacts_social_link" alt="twitter" height="">
+                            <a href="#" target="_blank" class="footer_contacts_social_list_item_link">
                                 l
                             </a>
                         </li>
                         <li class="footer_contacts_social_list_item">
-                            <a href="#" class="footer_contacts_social_link" alt="twitter" height="">
+                            <a href="#" target="_blank" class="footer_contacts_social_list_item_link">
                                 f
                             </a>
                         </li>
                         <li class="footer_contacts_social_list_item">
-                            <a href="#" class="footer_contacts_social_link" alt="twitter" height="">
+                            <a href="#" target="_blank" class="footer_contacts_social_list_item_link">
                                 i
                             </a>
                         </li>
                         <li class="footer_contacts_social_list_item">
-                            <a href="#" class="footer_contacts_social_link" alt="twitter" height="">
+                            <a href="#" target="_blank" class="footer_contacts_social_list_item_link">
                                 g
                             </a>
                         </li>
                         <li class="footer_contacts_social_list_item">
-                            <a href="#" class="footer_contacts_social_link" alt="twitter" height="">
+                            <a href="#" target="_blank" class="footer_contacts_social_list_item_link">
                                 x
                             </a>
                         </li>
@@ -272,6 +278,8 @@
             </div>
         </div>
         <p class="footer_copy">Copyright © 2014 Product name · PSD HTML CSS</p>
+
+    </footer>
 
 </body>
 
